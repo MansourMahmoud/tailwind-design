@@ -1,4 +1,5 @@
 import React from 'react'
+import illustrationIntro from '../assets/images/illustration-intro.png'
 
 const Landing = () => {
     return (
@@ -6,7 +7,7 @@ const Landing = () => {
             <div className=''>
                 <div className='container mx-auto element-center flex-col gap-6'>
                     <div className='w-[450px] max-w-full'>
-                        <img src="/src/assets/images/illustration-intro.png" alt="" className='w-full h-full' />
+                        <img src={`${illustrationIntro}`} alt="" className='w-full h-full' />
                     </div>
                     <div className='text-center flex flex-col gap-6 w-[560px] max-w-full'>
                         <h1 className='text-3xl md:text-4xl'>
