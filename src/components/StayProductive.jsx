@@ -1,10 +1,12 @@
 import React from 'react'
+import illustrationStayProductive from '../assets/images/illustration-stay-productive.png'
+import iconArrow from '../assets/images/icon-arrow.svg'
 
 const StayProductive = () => {
   return <section className='pb-[150px]'>
     <div className='container grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center'>
     <div>
-        <img className='w-full h-full' src="/src/assets/images/illustration-stay-productive.png" alt="stay-productive-img" />
+        <img className='w-full h-full' src={`${illustrationStayProductive}`} alt="stay-productive-img" />
     </div>
     <div>
     <h2 className='font-medium text-[30px] leading-[50px]'>
@@ -24,7 +26,7 @@ const StayProductive = () => {
     </div>
     <a href="/" className='flex text-primary hover:text-[#42b0d1] border-b-2 border-primary border-solid transition-colors duration-200 pb-[5px] gap-[15px] w-fit'>
         See how Fylo works
-        <img className='w-[20px] animate-moveRight h-[20px] object-contain' src="/src/assets/images/icon-arrow.svg" alt="arrow-img" />
+        <img className='w-[20px] animate-moveRight h-[20px] object-contain' src={`${iconArrow}`} alt="arrow-img" />
     </a>
     </div>
     

@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import {FaFacebookF, FaTwitter, FaInstagram} from 'react-icons/fa'
+import logo from '../assets/images/logo.svg'
+import iconLocation from '../assets/images/icon-location.svg'
+import iconPhone from '../assets/images/icon-phone.svg'
+import iconEmail from '../assets/images/icon-email.svg'
 
 const Footer = () => {
 
   const [contacts, setContact] = useState([
     {
-      icon: "icon-phone.svg", text: "+201158924239"
+      icon: iconPhone, text: "+201158924239"
     },
     {
-      icon: "icon-email.svg", text: "mansourmahmoud77a@gmail.com"
+      icon: iconEmail, text: "mansourmahmoud77a@gmail.com"
     },
   ])
 
@@ -32,13 +36,13 @@ const Footer = () => {
     <div className='container'>
 
       <a href="/">
-        <img src="/src/assets/images/logo.svg"
+        <img src={`${logo}`}
           alt="logp-img"
           className='w-[175px] h-[66px] object-contain' />
       </a>
       <div className='mt-[30px] flex justify-between flex-wrap flex-col md:flex-row gap-[30px]'>
         <div className='flex gap-[15px] w-[340px] max-w-full'>
-          <img src="/src/assets/images/icon-location.svg"
+          <img src={`${iconLocation}`}
             alt="location-icon"
             className='w-[18px] h-[18px] object-contain' />
           <p className='font-normal text-sm tracking-[0.8px]'>
@@ -49,7 +53,7 @@ const Footer = () => {
         <div>
           {contacts.map((contact, index)=>(
             <div className='flex gap-[15px] mb-[15px] last-of-type:mb-0 items-center' key={index}>
-              <img className='w-[18px] h-[18px]' src={`/src/assets/images/${contact.icon}`} alt="icon" />
+              <img className='w-[18px] h-[18px]' src={`${contact.icon}`} alt="icon" />
               <p>{contact.text}</p>
             </div>
           ))}

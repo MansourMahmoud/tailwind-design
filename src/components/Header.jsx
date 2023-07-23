@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import logo from '../assets/images/logo.svg'
 
 const Header = () => {
   const [links, setLinks] = useState(["Features", "Team", "SignIn"])
@@ -21,7 +22,7 @@ const Header = () => {
     <header ref={headerRef} className="pt-[60px] fixed top-0 left-0 w-full z-50 transition-all duration-200">
       <div className="container mx-auto flex justify-between items-center gap-8 sm:gap-0 flex-col sm:flex-row">
       <a>
-        <img src="/src/assets/images/logo.svg" alt="" />
+        <img src={`${logo}`} alt="logo" />
       </a>
       <nav>
         <ul className="flex gap-5 items-center">

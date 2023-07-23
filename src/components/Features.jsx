@@ -1,25 +1,29 @@
 import React, { useState } from 'react'
+import accessAnywhere from '../assets/images/icon-access-anywhere.svg'
+import security from '../assets/images/icon-security.svg'
+import collaboration from '../assets/images/icon-collaboration.svg'
+import anyFile from '../assets/images/icon-any-file.svg'
 
 const Features = () => {
 
   const [items, setItems] = useState([
     {
-      icon: "icon-access-anywhere.svg",
+      icon: accessAnywhere,
       title: "Acces your files,anywhere",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem doloribus tempore dolores, placeat libero, ratione nostrum eius saepe expedita totam fugit architecto"
     },
     {
-      icon: "icon-security.svg",
+      icon: security,
       title: "Security you can trust",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem doloribus tempore dolores, placeat libero, ratione nostrum eius saepe expedita totam fugit architecto"
     },
     {
-      icon: "icon-collaboration.svg",
+      icon: collaboration,
       title: "Real-time collaboration",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem doloribus tempore dolores, placeat libero, ratione nostrum eius saepe expedita totam fugit architecto"
     },
     {
-      icon: "icon-any-file.svg",
+      icon: anyFile,
       title: "Store any type of file",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem doloribus tempore dolores, placeat libero, ratione nostrum eius saepe expedita totam fugit architecto"
     },
@@ -33,7 +37,7 @@ const Features = () => {
           {items.map((item) => (
 
             <div key={item.title} className='element-center flex-col text-center'>
-              <img className='w-[80px] h-[80px] object-contain' src={`/src/assets/images/${item.icon}`} alt="icon" />
+              <img className='w-[80px] h-[80px] object-contain' src={`${item.icon}`} alt="icon" />
 
               <h1 className='text-xl font-semibold'>
                 {item.title}

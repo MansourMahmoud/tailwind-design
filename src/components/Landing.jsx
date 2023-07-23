@@ -1,5 +1,6 @@
 import React from 'react'
 import illustrationIntro from '../assets/images/illustration-intro.png'
+import curvyDesktop from '../assets/images/bg-curvy-desktop.svg'
 
 const Landing = () => {
     return (
@@ -27,7 +28,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className='w-full h-[200px]'>
-                <img src="/src/assets/images/bg-curvy-desktop.svg" alt="img" className='w-full h-full' />
+                <img src={`${curvyDesktop}`} alt="img" className='w-full h-full' />
             </div>
         </section>
 
